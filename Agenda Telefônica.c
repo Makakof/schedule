@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "schedule.h"
 
 //
 // Created by Luiz Henrique S.S on 05/03/2023.
@@ -9,14 +10,6 @@
 /*O intuito dessa atividade é fazer uma agenda telefonica que seja persistente
 e guarde os valores em um arquivo .txt e .bin*/
 
-typedef struct node
-{
-    char name[45];
-    char sex[2];
-    char telephone[15];
-    int age;
-    struct node *next;
-}node;
 
 node* newContact()
 {
